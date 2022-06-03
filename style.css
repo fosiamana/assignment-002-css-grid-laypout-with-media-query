@@ -1,0 +1,62 @@
+.container{ 
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    "stud break css"
+    "boy cont cont"
+
+    ;
+    
+    
+}
+ #header{
+     grid-area: stud;
+     text-align: center;
+     line-height: normal;
+border: 1px solid;
+ }
+ #center{
+     grid-area: break;
+     text-align: center;
+     border: 2px solid;
+
+ }
+ #css-content{
+     grid-area: css;
+     text-align: center;
+     border: 2px solid;
+ }
+ #turtle{
+     grid-area: boy;
+     text-align: center;
+     border: 2px solid;
+ }
+ #content{
+     grid-area: cont;
+
+ }
+ #content1{ 
+     height: 20%;
+     background-color:rgb(208, 211, 24);
+ }
+ #content2{
+background-color: rgb(108, 108, 247);
+height: 20%;
+ }
+ #content3{
+     background-color:rgb(52, 52, 175) ;
+     height: 20%;
+ }
+ #content4{
+     background-color: aquamarine;
+     height: 40%;
+ }
+ #content4{
+     background-color: blueviolet;
+ }
+h5{
+    text-align: center;
+}
+ 
