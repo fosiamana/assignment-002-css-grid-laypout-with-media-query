@@ -13,28 +13,25 @@
 }
  #header{
      grid-area: stud;
-     text-align: center;
      line-height: normal;
 border: 1px solid;
  }
  #center{
      grid-area: break;
-     text-align: center;
      border: 2px solid;
 
  }
  #css-content{
      grid-area: css;
-     text-align: center;
      border: 2px solid;
  }
  #turtle{
      grid-area: boy;
-     text-align: center;
      border: 2px solid;
  }
  #content{
      grid-area: cont;
+     border: 2PX solid;
 
  }
  #content1{ 
@@ -51,7 +48,12 @@ height: 20%;
  }
  #content4{
      background-color: aquamarine;
-     height: 40%;
+     height: 20%;
+     
+ }
+ #content0{
+     background-color: blue;
+     height: 20%;
  }
  #content4{
      background-color: blueviolet;
@@ -59,4 +61,20 @@ height: 20%;
 h5{
     text-align: center;
 }
- 
+h4{text-align: center;}
+
+ /* smaller devices of 576px and up */
+ @media(max-width: 576px){
+     .container{
+         grid-template-columns: auto;
+         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+         grid-template-areas: 
+         "stud"
+         "break"
+         "css"
+         "boy"
+         "cont"
+         
+         ;
+     }
+ }
